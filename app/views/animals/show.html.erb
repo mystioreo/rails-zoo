@@ -1,0 +1,7 @@
+<h1><%="#{@animal.name}"%></h1>
+<ul>
+  <li>Species: <%="#{@animal.species}"%></li>
+  <li>Age: <%="#{@animal.age}"%></li>
+</ul>
+<p><%=link_to "back to list", animals_path%></p>
+<p><%=link_to "edit this animal", edit_animal_path%></p>

@@ -1,0 +1,5 @@
+<h1> Animal List </h1>
+<%@animals.each do |animal|%>
+  <%= link_to "#{animal.name}", animal_path(animal.id)%>
+<%end%>
+<p><%= link_to "create new animal", new_animal_path%></p>

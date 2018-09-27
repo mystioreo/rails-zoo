@@ -1,0 +1,18 @@
+<%= form_with model: @animal, class: 'form' do |f|%>
+
+<p><%= form_intro %></p>
+
+<section>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :species %>
+<%= f.text_field :species %>
+
+<%= f.label :age %>
+<%= f.text_field :age %>
+
+<%= f.submit "Save Changes", class: "submit_button" %>
+</section>
+
+<%end%>
