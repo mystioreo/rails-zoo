@@ -1,8 +1,8 @@
 <%= form_with model: @animal, class: 'form' do |f|%>
 
-<p><%= form_intro %></p>
+<p id='form_intro'><%= form_intro %></p>
 
-<section>
+<section id='form_fields'>
 <%= f.label :name %>
 <%= f.text_field :name %>
 

@@ -1,6 +1,9 @@
 <h1> Animal List </h1>
-<%@animals.each do |animal|%>
-  <%= link_to "#{animal.name}", animal_path(animal.id)%>
-    <p> <%= link_to "Delete", animal_path(animal.id), method: :delete, data: {confirm: "are you sure you want to delete #{animal.name}?"} %></p>
-<%end%>
-<p><%= link_to "create new animal", new_animal_path%></p>
+<ul id='animal_list'><%@animals.each do |animal|%>
+  <li><p id='animal_name'><%= link_to "#{animal.name}", animal_path(animal.id)%></p>
+      <p><%= link_to 'edit', edit_animal_path(animal.id)%>  |  <%= link_to "delete", animal_path(animal.id), method: :delete, data: {confirm: "are you sure you want to delete #{animal.name}?"} %></p>
+  </li>
+<%end%></ul>
+<p id='button'>
+<button class='w3-button'><%= link_to "create new animal", new_animal_path%></button>
+</p>

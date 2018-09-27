@@ -1,3 +1,40 @@
 // Place all the styles related to the animals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+#form_fields {
+  display: flex;
+  flex-direction: column;
+}
+
+#animal_info {
+  list-style: none;
+}
+
+#animal_list {
+  list-style: square;
+}
+
+#animal_name * {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+button {
+  margin: 5%;
+  padding: 2%;
+  font-size: large;
+}
+
+#button {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
