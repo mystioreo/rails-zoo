@@ -2,6 +2,7 @@
 <ul>
   <li>Species: <%="#{@animal.species}"%></li>
   <li>Age: <%="#{@animal.age}"%></li>
+  <li><%= image_tag("#{@animal.image}", :alt => "picture of a #{@animal.species}") %></li>
 </ul>
 <p><%=link_to "back to list", animals_path%></p>
 <p><%=link_to "edit #{@animal.name}", edit_animal_path%></p>
