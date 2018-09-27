@@ -4,4 +4,5 @@
   <li>Age: <%="#{@animal.age}"%></li>
 </ul>
 <p><%=link_to "back to list", animals_path%></p>
-<p><%=link_to "edit this animal", edit_animal_path%></p>
+<p><%=link_to "edit #{@animal.name}", edit_animal_path%></p>
+<p> <%= link_to "delete #{@animal.name}", animal_path(@animal.id), method: :delete, data: {confirm: "are you sure you want to delete #{@animal.name}?"} %></p>
